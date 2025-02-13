@@ -145,6 +145,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </div>
 
   <!-- Photos Section -->
+<!-- Photos Section -->
 <div class="w3-padding-64 w3-content my-photos" id="photos">
     <h2 class="w3-text-light-grey">My Photos</h2>
     <hr style="width:200px" class="w3-opacity">
@@ -155,12 +156,23 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
             <img src="/w3images/underwater.jpg" alt="Photo 2" class="photo-item">
             <img src="/w3images/chef.jpg" alt="Photo 3" class="photo-item">
             <img src="/w3images/wedding.jpg" alt="Photo 4" class="photo-item">
-            <img src="/path/to/IMG_1493.jpg" alt="IMG_1493" class="photo-item"> <!-- Tämä on uusi kuva -->
         </div>
     </div>
 </div>
 
 <style>
+    .photo-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Kaksi saraketta */
+        gap: 16px; /* Väli kuvien välillä */
+    }
+    .photo-item {
+        width: 100%;
+        height: auto; /* Varmistaa, ettei kuvat veny */
+        object-fit: cover; /* Kuva täyttää tilan ilman venymistä */
+    }
+</style>
+
     .photo-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* Kaksi saraketta */
