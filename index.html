@@ -28,9 +28,10 @@ body {
 
 /* Näille osioille voidaan asettaa yhteinen koko, joka mukautuu näytön kokoon */
 .w3-half {
-  flex: 1 1 30%;  /* Tämä asettaa osiot niin, että ne vievät 30% tilasta */
+   flex: 1 1 30%;  /* Tämä asettaa osiot niin, että ne vievät 30% tilasta */
   margin-bottom: 16px;
   box-sizing: border-box;
+  will-change: transform; /* Lisätty optimoimaan suorituskykyä */
 }
 
 /* Pienille näytöille - muuttuu päällekkäin */
